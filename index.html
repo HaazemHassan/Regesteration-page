@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rigester</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <!-- div contain the form -->
+    <div class="wrapper">
+      <!--div contain the dark mode-->
+      <div class="dark-mode">
+        <div class="container">
+          <div class="buttun"></div>
+          <div class="right-moon">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <div class="left-sun">
+            <i class="fa-regular fa-sun fa-spin"></i>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <!--start form info-->
+      <form action="2insert_users.php" method="post">
+        <h1>Rigester</h1>
+
+        <div class="input-box">
+          <input type="text" name="name" id="name" placeholder="frist name" />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="errorfristname"></div>
+
+        <div class="input-box">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="phone or email"
+          />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="erroruser"></div>
+
+        <div class="input-box">
+          <input
+            type="password"
+            name="Password"
+            id="pass"
+            placeholder="Password"
+          />
+          <div class="show-hide">
+            <i id="open-eye" class="fa-solid fa-eye"></i>
+            <i id="close-eye" class="fa-solid fa-eye-slash"></i>
+          </div>
+        </div>
+        <div class="errorpass"></div>
+
+        <div class="input-box">
+          <input type="password" id="passcon" placeholder="Confirm Password" />
+          <div class="show-hidecon">
+            <i id="open-eyecon" class="fa-solid fa-eye"></i>
+            <i id="close-eyecon" class="fa-solid fa-eye-slash"></i>
+          </div>
+        </div>
+        <div class="errorpasscon"></div>
+
+        <button name="newuser" type="submit" id="subm" class="btn">
+          Login
+        </button>
+        <div class="back-to-log">
+          <p>Want To Return ? <a href="login.php"> Log in</a></p>
+        </div>
+      </form>
+    </div>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
